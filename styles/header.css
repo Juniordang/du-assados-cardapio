@@ -1,0 +1,35 @@
+header {
+    max-width: 100%;
+    background: black url('/assets/back.svg') center no-repeat;
+    color: white;
+    padding: 3rem 2rem;
+    display: flex;
+    justify-content: center;
+}
+.c-head {
+    text-align: center;
+    width: 24rem;
+}
+.c-head > img {
+    width: 15rem;
+    height: 15rem;
+    border-radius: 50%;
+    margin-bottom: 2rem;
+}
+.c-header__info {
+    display: grid;
+    row-gap: 1rem;
+}
+.c-header__info h1 {
+    font-size: 3rem;
+    line-height: 3.1rem;
+}
+.c-header__info span {
+    font-size: 1.6rem;
+}
+#c-status {
+    border-radius: 1rem;
+    background: var(--green);
+    font-weight: 700;
+    padding: .5rem 0;
+}
