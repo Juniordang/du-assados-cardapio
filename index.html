@@ -4,17 +4,17 @@
     <!-- fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Du assados</title>
-    <link rel="stylesheet" href="./styles/main.css" />
+    <link rel="stylesheet" href="./styles/index.css" />
     <script src="https://unpkg.com/@phosphor-icons/web"></script>
 </head>
 <body>
     <header>
         <div class="c-head">
-            <img src="assets/frango.jpg" alt="logo du assados" />
+            <img src="assets/frango_assado.jpg" alt="logo du assados" />
             <div class="c-header__info">
                 <h1>Du Assados</h1>
                 <span id="c-loc">Rua das amoras, 14, Cianorte, PR</span>
@@ -25,25 +25,62 @@
         </div>
     </header>
     <main>
-        <h2>Conheça o nosso menu</h2>
-        <section  class="s-menu">
-            <div class="c-item">
-                <img src="/assets/frango.jpg" alt="frango" />
-                <div class="c-info__item">
-                    <div class="c-top">
-                        <strong>Frango com Manteiga e Alho</strong>
-                        <p>
-                            Frango inteiro, Manteiga, Alho picado, Salsa picada, Limão, Sal e pimenta-do-reino a gosto.
-                        </p>
-                    </div>
-                    <div class="c-bottom">
-                        <span class="c-price">R$ 35,00</span>
-                        <div id="c-cart"><i class="ph ph-shopping-cart"></i></div>
+        <!-- modal -->
+        <section id="s-modal">
+            <div class="c-box__cart">
+                <h2>Seu Carrinho</h2>
+                <div class="c-orders">
+                    <div class="c-order">
+                        <div class="info">
+                            <h3>Frango Crocrante</h3>
+                            <p>Quantidade:<span id="order__amount">2</span></p>
+                            <p>
+                                <small>R$</small>
+                                <span>35,00</span>
+                            </p>
+                        </div>
+                        <button>Remover</button>
                     </div>
                 </div>
-                
+                <form>
+                    <div class="c-top">
+                        <label for="c-address">Endereço de entrega:</label>
+                        <input type="text" id="c-address" placeholder="Digite seu endereço completo..." />
+                    </div>
+                    <div class="c-buttons">
+                        <button class="closse">Fechar</button>
+                        <button class="submit">Finalizar pedido</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+         <!-- menu -->
+        <h2 class="c-title">Conheça o nosso menu</h2>
+        <h3 class="c-category">Frangos</h3>
+        <section class="s-menu">
+            <div class="c-item">
+                <img src="/assets/frango_assado.jpg" alt="frango" />
+                <div class="c-info__item">
+                    <div class="c-top__menu">
+                        <h3>Frango Crocrante</h3>
+                        <strong class="c-price"><small>R$</small> <span>35,00</span></strong>
+                    </div>
+                    <div class="c-bottom__menu">
+                        <button id="c-cart">
+                            <i class="ph ph-shopping-cart"></i>
+                            <span>Adicionar</span>
+                        </button>
+                    </div>
+                </div>
             </div>
         </section>
     </main>
+    <footer>
+        <div class="c-cart__footer">
+            <span>(0)</span>
+            <span>Veja seu carrinho</span>
+            <i class="ph ph-shopping-cart"></i>
+        </div>
+    </footer>
 </body>
 </html>

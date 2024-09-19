@@ -1,0 +1,77 @@
+main {
+    width: 100%;
+    height: 100vh;
+    max-height: 49rem;
+    padding: 2rem;
+}
+.c-title {
+    text-align: center;
+    font-size: 2.7rem;
+    line-height: 2.8rem;
+    padding: 1rem 0;
+}
+.c-category {
+    padding: 2rem 0;
+    text-align: center;
+    text-transform: uppercase;
+}
+.s-menu {
+    width: 100%;
+    display: grid;
+    justify-content: center;
+}
+.c-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    width: 20rem;
+    padding: 2rem 1.5rem;
+    border: 1px solid #343131cc;
+    border-radius: 1.5rem;
+    transition: all .2s linear;
+
+}
+.c-item img {
+    width: 100%;
+    height: 10.8rem;
+    border-radius: 1rem;
+}
+.c-item img:hover {
+    transform: scale(1.1);
+}
+.c-info__item {
+    height: 100%;
+    display: grid;
+    grid-template-rows: auto 1fr;
+    row-gap: 2rem;
+}
+.c-top__menu {
+    display: flex;
+    align-items: center;
+}
+.c-top__menu h3 {
+    font-size: 1.8rem;
+    line-height: 2.3rem;
+}
+.c-price {
+    color: var(--ligth-green);
+}
+.c-price span {
+    font-size: 1.7rem;
+}
+#c-cart {
+    width: 100%;
+    background: black;
+    border: 0;
+    border-radius: 0.5rem;
+    padding: 0.5rem 1rem;
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: white;
+    text-transform: uppercase;
+}
+#c-cart i {
+    font-size: 1.8rem;
+}

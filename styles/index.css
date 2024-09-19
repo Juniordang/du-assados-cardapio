@@ -1,5 +1,6 @@
 @import "header.css";
 @import "main.css";
+@import "modal.css";
 * {
     margin: 0;
     padding: 0;
@@ -9,15 +10,36 @@
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     -webkit-text-size-adjust: 100%;
+    font-family: 'Inter', arial, helvetica, sans-serif;
 }
 :root {
     font-size: 62.5%;
-    font-family: 'Dm Sans', arial, helvetica, sans-serif;
-    --green: #54CC0A;
+    --title-font: "Space Grotesk", arial, helvetica, sans-serif;
+    --ligth-green: #41ec41;
+    --green: #18cd18;
+    --red: #FF3131;
 }
 button:hover {
     cursor: pointer;
 }
 body {
     font-size: 1.6rem;
+    min-width: 100%;
+    min-height: 100vh;
+    position: relative;
+    
+}
+h1,h2,h3 {
+    font-family: var(--title-font);
+}
+/* footer */
+footer {
+    background: var(--red);
+    color: white;
+    padding: 1rem 0;
+    width: 100%;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    box-shadow: 0px 1px 8px 0px #000000b0;
 }

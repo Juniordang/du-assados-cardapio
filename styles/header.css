@@ -1,14 +1,15 @@
 header {
-    max-width: 100%;
+    width: 100%;
     background: black url('/assets/back.svg') center no-repeat;
     color: white;
-    padding: 3rem 2rem;
+    padding: 3rem 2rem ;
+    margin-bottom: 2rem;
     display: flex;
     justify-content: center;
 }
 .c-head {
     text-align: center;
-    width: 24rem;
+    min-width: 26rem;
 }
 .c-head > img {
     width: 15rem;
@@ -29,7 +30,12 @@ header {
 }
 #c-status {
     border-radius: 1rem;
-    background: var(--green);
+    background: var(--ligth-green);
     font-weight: 700;
     padding: .5rem 0;
+    transition: all .5s linear;
+}
+#c-status:hover {
+    background: var(--green);
+    cursor: pointer;
 }
