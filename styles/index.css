@@ -15,9 +15,9 @@
 :root {
     font-size: 62.5%;
     --title-font: "Space Grotesk", arial, helvetica, sans-serif;
-    --ligth-green: #41ec41;
-    --green: #18cd18;
-    --red: #FF3131;
+    --ligth-green: #41ec63;
+    --green: #20ce20;
+    --red: #f14848;
 }
 button:hover {
     cursor: pointer;
@@ -34,12 +34,17 @@ h1,h2,h3 {
 }
 /* footer */
 footer {
-    background: var(--red);
-    color: white;
-    padding: 1rem 0;
     width: 100%;
     text-align: center;
     position: fixed;
     bottom: 0;
+}
+.c-btn__footer {
+    color: white;
+    width: 100%;
+    padding: 1rem 0;
+    border: 0;
+    background-color: var(--red);
     box-shadow: 0px 1px 8px 0px #000000b0;
+    font-size: 1.6rem;
 }

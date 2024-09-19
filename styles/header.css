@@ -1,6 +1,6 @@
 header {
     width: 100%;
-    background: black url('/assets/back.svg') center no-repeat;
+    background: black url('../assets/back.svg') center no-repeat;
     color: white;
     padding: 3rem 2rem ;
     margin-bottom: 2rem;
