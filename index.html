@@ -14,10 +14,10 @@
 <body>
     <header>
         <div class="c-head">
-            <img src="assets/frango_assado.jpg" alt="logo du assados" />
+            <img src="assets/logo_duAssados.jpg" alt="logo du assados" />
             <div class="c-header__info">
                 <h1>Du Assados</h1>
-                <span id="c-loc">Rua das amoras, 14, Cianorte, PR</span>
+                <span id="c-loc">Rua Saquarema, 90, Cianorte, PR</span>
                 <div id="c-status">
                     Dom - 9:00 as 11:00
                 </div>
@@ -36,16 +36,23 @@
                             <p>Quantidade:<span id="order__amount">2</span></p>
                             <p>
                                 <small>R$</small>
-                                <span>35,00</span>
+                                <span>100,00</span>
                             </p>
                         </div>
                         <button>Remover</button>
                     </div>
+                    <p class="c-total">Total: 0</p>
                 </div>
                 <form>
-                    <div class="c-top">
-                        <label for="c-address">Endereço de entrega:</label>
-                        <input type="text" id="c-address" placeholder="Digite seu endereço completo..." />
+                    <div class="c-input__group">
+                        <div class="c-input">
+                            <label for="c-nome">Nome Completo:</label>
+                            <input type="text" id="c-nome" placeholder="Digite seu Nome completo..." class="input_item"/>
+                        </div>
+                        <div class="c-input">
+                            <label for="c-address">Endereço de entrega:</label>
+                            <input type="text" id="c-address" placeholder="Digite seu endereço completo..." class="input_item"/>
+                        </div>
                     </div>
                     <div class="c-buttons">
                         <button class="closse">Fechar</button>
@@ -56,17 +63,46 @@
         </section>
          <!-- menu -->
         <h2 class="c-title">Conheça o nosso menu</h2>
-        <h3 class="c-category">Frangos</h3>
         <section class="s-menu">
             <div class="c-item">
-                <img src="assets/frango_assado.jpg" alt="frango" />
+                <img src="assets/frango_assado.jpg" alt="foto do frango assado" />
                 <div class="c-info__item">
                     <div class="c-top__menu">
                         <h3>Frango Crocrante</h3>
-                        <strong class="c-price"><small>R$</small> <span>35,00</span></strong>
+                        <strong class="c-price"><small>R$</small> <span>50,00</span></strong>
                     </div>
                     <div class="c-bottom__menu">
-                        <button id="c-cart">
+                        <button id="c-cart" data-name="Frango Crocrante" data-price="50,00">
+                            <i class="ph ph-shopping-cart"></i>
+                            <span>Adicionar</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="c-item">
+                <img src="assets/sobrecoxa_duassados.jpg" alt="foto da coxa e sobrecoxa assada com batata" />
+                <div class="c-info__item">
+                    <div class="c-top__menu">
+                        <h3>Coxa e Sobrecoxa</h3>
+                        <strong class="c-price"><small>R$</small> <span>25,00</span></strong>
+                    </div>
+                    <div class="c-bottom__menu">
+                        <button id="c-cart" data-name="Coxa e Sobrecoxa" data-price="25,00">
+                            <i class="ph ph-shopping-cart"></i>
+                            <span>Adicionar</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="c-item">
+                <img src="assets/costela_duassados.jpg" alt="foto da costela assada sendo cortada" />
+                <div class="c-info__item">
+                    <div class="c-top__menu">
+                        <h3>Costela</h3>
+                        <strong class="c-price"><small>R$</small> <span>60,00</span></strong>
+                    </div>
+                    <div class="c-bottom__menu">
+                        <button id="c-cart" data-name="Costela" data-price="60,00">
                             <i class="ph ph-shopping-cart"></i>
                             <span>Adicionar</span>
                         </button>
@@ -84,5 +120,8 @@
             </button>
         </div>
     </footer>
+
+    <!-- script -->
+    <script src="script.js"></script>
 </body>
 </html>

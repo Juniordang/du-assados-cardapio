@@ -20,14 +20,16 @@
     max-width: 60rem;
 }
 .c-box__cart h2 {
-    font-size: 1.7rem;
+    font-size: 1.8rem;
     text-align: center;
     padding: 1rem 0;
+    margin-bottom: 1.5rem;
 }
 .c-order {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin-bottom: 1rem;
 }
 .info {
     display: flex;
@@ -35,39 +37,42 @@
     row-gap: .5rem;
 }
 .c-order h3 {
-    font-size: 1.5rem;
+    font-size: 1.7rem;
 }
 .c-order p {
-    font-size: 1.3rem;
+    font-size: 1.5rem;
 }
 .c-order button {
     all: unset;
-    font-size: 1.4rem;
+    font-size: 1.5rem;
 }
 .c-order button:hover {
     cursor: pointer;
     text-decoration: underline;
 }
+.c-total {
+    font-weight: 700;
+}
 /* form */
 form {
     margin-top: 1rem;
 }
-form .c-top {
+form .c-input {
     display: grid;
     row-gap: .5rem;
     font-size: 1.4rem;
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
 }
-#c-address {
+.input_item {
     padding: .7rem .5rem;
     border: 1px solid #0000007b;
     border-radius: .7rem;
     width: 100%;
 }
-#c-address:focus-within {
+.input_item:focus-within {
     outline: 2px solid green;
 }
-#c-address::placeholder {
+.input_item::placeholder {
     font-size: 1.3rem;
 }
 .c-buttons {

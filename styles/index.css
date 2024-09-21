@@ -22,12 +22,14 @@
 button:hover {
     cursor: pointer;
 }
+html, body {
+    width: 100%;
+}
 body {
-    font-size: 1.6rem;
-    min-width: 100%;
     min-height: 100vh;
+    font-size: 1.6rem;
     position: relative;
-    
+    padding-bottom: 4rem;
 }
 h1,h2,h3 {
     font-family: var(--title-font);
@@ -46,5 +48,51 @@ footer {
     border: 0;
     background-color: var(--red);
     box-shadow: 0px 1px 8px 0px #000000b0;
-    font-size: 1.6rem;
+    font-size: 1.7rem;
+}
+.c-btn__footer i {
+    font-size: 2rem;
+}
+
+/* media queries */
+@media screen and (min-width: 600px) and (max-width: 780px) {
+    .s-menu {
+        row-gap: 3.5rem;
+    }
+    .c-item {
+        width: 40rem;
+        flex-direction: row;
+    }
+}
+@media screen and (min-width: 781px) and (max-width: 992px) {
+    .s-menu {
+        grid-template-columns: 1fr 1fr;
+        column-gap: 3.5rem;
+    }
+    .c-item {
+        width: auto;
+        flex-direction: row;
+    }
+    #c-cart {
+        width: max-content;
+        padding: .5rem 2rem;
+    }
+}
+@media screen and (min-width: 993px) {
+    .s-menu {
+        grid-template-columns: 1fr 1fr;
+        column-gap: 3rem;
+        width: 96rem;
+    }
+    .c-item {
+        width: auto;
+        flex-direction: row;
+    }
+    .c-top__menu h3 {
+        width: 12.9rem;
+    }
+    #c-cart {
+        width: 100%;
+        padding: .5rem 2rem;
+    }
 }
