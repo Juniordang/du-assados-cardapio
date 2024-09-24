@@ -29,41 +29,32 @@
         <section id="s-modal">
             <div class="c-box__cart">
                 <h2>Seu Carrinho</h2>
-                <div class="c-orders">
-                    <div class="c-order">
-                        <div class="info">
-                            <h3>Frango Crocrante</h3>
-                            <p>Quantidade:<span id="order__amount">2</span></p>
-                            <p>
-                                <small>R$</small>
-                                <span>100,00</span>
-                            </p>
-                        </div>
-                        <button>Remover</button>
-                    </div>
-                    <p class="c-total">Total: 0</p>
+                <div class="c-orders" id="cart-items">
+                    
                 </div>
-                <form>
+                <p id="total">Total: <span class="c-total">0.00</span></p>
+                <div id="c-form">
                     <div class="c-input__group">
                         <div class="c-input">
                             <label for="c-nome">Nome Completo:</label>
-                            <input type="text" id="c-nome" placeholder="Digite seu Nome completo..." class="input_item"/>
+                            <input type="text" id="c-nome" placeholder="Digite seu Nome completo..." class="input_item" required/>
                         </div>
                         <div class="c-input">
                             <label for="c-address">Endereço de entrega:</label>
-                            <input type="text" id="c-address" placeholder="Digite seu endereço completo..." class="input_item"/>
+                            <input type="text" id="c-address" placeholder="Digite seu endereço completo..." class="input_item" required/>
+                            <p id="address-warn">*Digite o endereço completo</p>
                         </div>
                     </div>
                     <div class="c-buttons">
-                        <button class="closse">Fechar</button>
-                        <button class="submit">Finalizar pedido</button>
+                        <button class="close" id="close-modal">Fechar</button>
+                        <button class="submit" id="checkout">Finalizar pedido</button>
                     </div>
-                </form>
+                </div>
             </div>
         </section>
          <!-- menu -->
         <h2 class="c-title">Conheça o nosso menu</h2>
-        <section class="s-menu">
+        <section class="s-menu" id="cart-menu">
             <div class="c-item">
                 <img src="assets/frango_assado.jpg" alt="foto do frango assado" />
                 <div class="c-info__item">
@@ -72,7 +63,7 @@
                         <strong class="c-price"><small>R$</small> <span>50,00</span></strong>
                     </div>
                     <div class="c-bottom__menu">
-                        <button id="c-cart" data-name="Frango Crocrante" data-price="50,00">
+                        <button class="c-cart" data-name="Frango Crocrante" data-price="50.00">
                             <i class="ph ph-shopping-cart"></i>
                             <span>Adicionar</span>
                         </button>
@@ -87,7 +78,7 @@
                         <strong class="c-price"><small>R$</small> <span>25,00</span></strong>
                     </div>
                     <div class="c-bottom__menu">
-                        <button id="c-cart" data-name="Coxa e Sobrecoxa" data-price="25,00">
+                        <button class="c-cart" data-name="Coxa e Sobrecoxa" data-price="25.00">
                             <i class="ph ph-shopping-cart"></i>
                             <span>Adicionar</span>
                         </button>
@@ -102,7 +93,7 @@
                         <strong class="c-price"><small>R$</small> <span>60,00</span></strong>
                     </div>
                     <div class="c-bottom__menu">
-                        <button id="c-cart" data-name="Costela" data-price="60,00">
+                        <button class="c-cart" data-name="Costela" data-price="60.00">
                             <i class="ph ph-shopping-cart"></i>
                             <span>Adicionar</span>
                         </button>
@@ -114,7 +105,7 @@
     <footer>
         <div class="c-cart__footer">
             <button class="c-btn__footer">
-                <span>(0)</span>
+                ( <span class="cart-count">0</span> )
                 <span>Veja seu carrinho</span>
                 <i class="ph ph-shopping-cart"></i>
             </button>
@@ -122,6 +113,6 @@
     </footer>
 
     <!-- script -->
-    <script src="script.js"></script>
+    <script src="/scripts/script.js"></script>
 </body>
 </html>

@@ -1,5 +1,5 @@
 #s-modal {
-    position: absolute;
+    position: fixed;
     z-index: 99;
     top: 0;
     left: 0;
@@ -20,7 +20,7 @@
     max-width: 60rem;
 }
 .c-box__cart h2 {
-    font-size: 1.8rem;
+    font-size: 2.2rem;
     text-align: center;
     padding: 1rem 0;
     margin-bottom: 1.5rem;
@@ -50,18 +50,23 @@
     cursor: pointer;
     text-decoration: underline;
 }
-.c-total {
+#total {
     font-weight: 700;
+    margin: 1.5rem 0;
 }
 /* form */
-form {
+#c-form {
     margin-top: 1rem;
 }
-form .c-input {
+#c-form .c-input {
     display: grid;
     row-gap: .5rem;
     font-size: 1.4rem;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
+}
+.c-input #address-warn {
+    color: var(--red);
+    display: none;
 }
 .input_item {
     padding: .7rem .5rem;
@@ -79,6 +84,7 @@ form .c-input {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin-top: 2rem;
 }
 .c-buttons button {
     transition: all .3s linear;
