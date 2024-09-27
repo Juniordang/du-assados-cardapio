@@ -2,14 +2,14 @@ header {
     width: 100%;
     background: black url('../assets/back.svg') center no-repeat;
     color: white;
-    padding: 4rem 2rem ;
+    padding: 5rem 2rem;
     margin-bottom: 2rem;
     display: flex;
     justify-content: center;
 }
 .c-head {
     text-align: center;
-    min-width: 26rem;
+    min-width: 28rem;
 }
 .c-head > img {
     width: 16rem;
@@ -20,23 +20,43 @@ header {
 }
 .c-header__info {
     display: grid;
-    row-gap: 1rem;
+    row-gap: .5rem;
 }
 .c-header__info h1 {
     font-size: 3rem;
     line-height: 3.1rem;
 }
 .c-header__info span {
-    font-size: 1.6rem;
+    font-size: 1.7rem;
+    font-weight: 500;
+    font-family: var(--title-font);
+    margin-bottom: 2.5rem;
 }
-#c-status {
+#open {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 1.5rem;
+}
+#open div {
+    width: 28rem;
+}
+#open div > p {
+    margin-bottom: 1rem;
+}
+.c-status {
+    width: 100%;
     border-radius: 1rem;
-    background: var(--ligth-green);
+    border: 0;
+    color: white;
     font-weight: 700;
-    padding: .5rem 0;
+    font-size: 1.6rem;
+    padding: 1rem 0;
     transition: all .5s linear;
 }
-#c-status:hover {
-    background: var(--green);
-    cursor: pointer;
+#data-span {
+    background-color: gray;
+}
+.u-color__entrega {
+    background-color: var(--red);
 }

@@ -25,7 +25,7 @@ main {
     gap: 1.5rem;
     width: 20rem;
     padding: 2rem 1.5rem;
-    border: 1px solid #343131cc;
+    border: 1px solid var(--border-color);
     border-radius: 1.5rem;
     /* transition: all .7s linear; */
 
@@ -54,9 +54,6 @@ main {
     font-size: 1.8rem;
     line-height: 2.3rem;
 }
-.c-price {
-    color: var(--ligth-green);
-}
 .c-price small {
     display: block;
 }
@@ -65,7 +62,7 @@ main {
 }
 .c-cart {
     width: 100%;
-    background: black;
+    background: var(--green);
     border: 0;
     border-radius: 0.5rem;
     padding: 1rem;

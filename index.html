@@ -18,8 +18,19 @@
             <div class="c-header__info">
                 <h1>Du Assados</h1>
                 <span id="c-loc">Rua Saquarema, 90, Cianorte, PR</span>
-                <div id="c-status">
-                    Dom - 9:00 as 11:00
+                <div id="open">
+                    <div>
+                        <p>Faça seus pedidos</p>
+                        <button class="c-status" id="data-span">
+                            Seg a sáb - 8:00 as 23:00
+                        </button> 
+                    </div>
+                    <div>
+                        <p>Dia de Entrega</p>
+                        <button class="c-status u-color__entrega">
+                            Dom - 9:00 as 12:00
+                        </button> 
+                    </div>
                 </div>
             </div>
         </div>
@@ -38,11 +49,12 @@
                         <div class="c-input">
                             <label for="c-nome">Nome Completo:</label>
                             <input type="text" id="c-nome" placeholder="Digite seu Nome completo..." class="input_item" required/>
+                            <p class="incorrect">*Digite o nome completo</p>
                         </div>
                         <div class="c-input">
                             <label for="c-address">Endereço de entrega:</label>
-                            <input type="text" id="c-address" placeholder="Digite seu endereço completo..." class="input_item" required/>
-                            <p id="address-warn">*Digite o endereço completo</p>
+                            <input type="text" id="c-address" placeholder="Digite seu endereço completo..." class="input_item" require/>
+                            <p id="address-warn" class="incorrect">*Digite o endereço completo</p>
                         </div>
                     </div>
                     <div class="c-buttons">

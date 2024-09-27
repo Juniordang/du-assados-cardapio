@@ -64,18 +64,15 @@
     font-size: 1.4rem;
     margin-bottom: 1rem;
 }
-.c-input #address-warn {
+.c-input .incorrect {
     color: var(--red);
     display: none;
 }
 .input_item {
     padding: .7rem .5rem;
-    border: 1px solid #0000007b;
+    border: 1px solid var(--border-color);
     border-radius: .7rem;
     width: 100%;
-}
-.input_item:focus-within {
-    outline: 2px solid green;
 }
 .input_item::placeholder {
     font-size: 1.3rem;
