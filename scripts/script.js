@@ -136,9 +136,9 @@ btnCheckout.addEventListener('click', function () {
   }).join("")
 
   const message = encodeURIComponent(mapItems)
-  const phone = "984498935"
+  const phone = "4484498935"
 
-  window.open(`https://wa.me/${phone}?text=${message} Cliente: ${nameInput.value} Endereço: ${addressInput.value}`, "_blank")
+  window.open(`https://wa.me/${phone}?text=${message} Cliente: ${nameInput.value} | Endereço: ${addressInput.value}`, "_blank")
   cart = [];
   updateCart();
 });
