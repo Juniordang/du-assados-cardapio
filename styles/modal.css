@@ -50,13 +50,13 @@
     cursor: pointer;
     text-decoration: underline;
 }
-#total {
-    font-weight: 700;
-    margin: 1.5rem 0;
+.total {
+    font-weight:600;
+    margin: .5rem 0;
 }
 /* form */
 #c-form {
-    margin-top: 1rem;
+    margin-top: 2rem;
 }
 #c-form .c-input {
     display: grid;

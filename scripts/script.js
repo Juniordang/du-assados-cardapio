@@ -45,10 +45,10 @@ function addToCart(name, price) {
   }
   updateCart();
 }
-
+let zapTotal = 0
 function updateCart() {
-  cartItemsContainer.innerHTML = '';
   let total = 0;
+  cartItemsContainer.innerHTML = '';
   cart.forEach((item) => {
     const cartItem = document.createElement('div');
 
@@ -73,8 +73,9 @@ function updateCart() {
     currency: 'BRL',
   });
   cartCounter.innerHTML = cart.length;
+  zapTotal = total
 }
-
+console.log('zap total' + zapTotal)
 // remove item do cart modal
 
 cartItemsContainer.addEventListener('click', function (event) {
@@ -131,14 +132,24 @@ btnCheckout.addEventListener('click', function () {
   // enviar pedido para o whats
   const mapItems = cart.map((item) => {
     return `
-      ${item.name} Quantidade: (${item.quantity}) Preço: R$${item.price} |
+      ${item.name}
+      QUANTIDADE: (${item.quantity})
+
+      PREÇO: R$${item.price} 
+      =========================\n
     `
   }).join("")
 
   const message = encodeURIComponent(mapItems)
   const phone = "4484498935"
 
-  window.open(`https://wa.me/${phone}?text=${message} Cliente: ${nameInput.value} | Endereço: ${addressInput.value}`, "_blank")
+  window.open(`https://wa.me/${phone}?text=${message}
+    CLIENTE: ${nameInput.value}
+    ENDEREÇO: ${addressInput.value} 
+    Total Produtos: ${0}
+    Taxa de entrega: 5,00
+    VALOR TOTAL: ${0},00
+  `, "_blank")
   cart = [];
   updateCart();
 });
@@ -148,7 +159,7 @@ function checkAssadosOpen() {
   const data = new Date();
   const hour = data.getHours();
   const day = data.getDay();
-  return (hour >= 9 && hour <= 23) && (day > 1 && day <= 7) 
+  return ((hour >= 9 && hour <= 23) && (day >= 1 && day <= 7)) || ((day === 0) && (hour >= 9 && hour <= 11))
 }
 
 const spanItem = document.getElementById("data-span")
@@ -156,5 +167,5 @@ const isOpen = checkAssadosOpen();
 if(isOpen) {
   spanItem.style.backgroundColor = "#41ec63";
 } else {
-  spanItem.style.backgroundColor = "gray";
+  spanItem.style.backgroundColor = "#BDC3C7";
 }
