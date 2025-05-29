@@ -50,18 +50,15 @@ readme.md
 */
 ```
 ## 🚀 Como Executar
-
-Clone o repositório:
-
-```bash
-git clone https://github.com/seu-usuario/du-assados.git
-``
-## Navegue até o diretório:
-```bash
-cd du-assados
 ```
-Abra o arquivo index.html no seu navegador.
+# Clone o repositório:
+git clone https://github.com/seu-usuario/du-assados.git
 
+# Navegue até o diretório:
+cd du-assados
+
+Abra o arquivo index.html no seu navegador.
+```
 ## 🎯 Melhorias Futuras
 
 - Integração com sistema real de pagamentos
