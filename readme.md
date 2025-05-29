@@ -25,3 +25,48 @@ O **Du Assados** é uma aplicação web que visa facilitar o agendamento e a org
 
 ## 📂 Estrutura do Projeto
 
+```sql
+/*
+Estrutura do Projeto Du Assados:
+
+assets/
+├── back.svg
+├── logo_duAssados.jpg
+├── frango_assado.jpg
+├── sobrecoxa_duassados.jpg
+└── costela_duassados.jpg
+
+styles/
+├── header.css
+├── index.css
+├── main.css
+└── modal.css
+
+scripts/
+└── script.js
+
+index.html
+readme.md
+*/
+## 🚀 Como Executar
+
+Clone o repositório:
+
+```bash
+git clone https://github.com/seu-usuario/du-assados.git
+
+## Navegue até o diretório:
+```bash
+cd du-assados
+Abra o arquivo index.html no seu navegador.
+
+🎯 Melhorias Futuras
+Integração com sistema real de pagamentos
+
+Implementação de back-end para armazenar pedidos
+
+Sistema de autenticação de usuários
+
+Filtros de busca e categorias no menu
+
+
